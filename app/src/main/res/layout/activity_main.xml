@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EcoGarden: El desafío verde"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#0B0B0B"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:translationY="40sp" />
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:translationX="40sp"
+            android:translationY="80sp">
+
+            <Button
+                android:id="@+id/registroCuidadoPlantasButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de cuidado de plantas" />
+
+            <Button
+                android:id="@+id/informacionSostenibilidadButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información sobre sostenibilidad" />
+
+            <Button
+                android:id="@+id/catalogoPlantasButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catálogo de plantas" />
+
+            <Button
+                android:id="@+id/planificadorJardinesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Planificador de jardines" />
+
+            <Button
+                android:id="@+id/estadisticasLogrosButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estadísticas y logros" />
+
+            <ScrollView
+                android:layout_width="320dp"
+                android:layout_height="231dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Respuesta"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:translationY="20sp" />
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
